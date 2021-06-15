@@ -1,4 +1,4 @@
-# javascript
+
 DIFFERENT BETWEEN BROWSER JS AND NODE JS
 
 Javascript is a programming language that is used for writing scripts on the website.	Node is a javascript runtime environment.
