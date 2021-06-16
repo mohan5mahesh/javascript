@@ -19,4 +19,9 @@ HTTP/2 has since become increasingly popular, with some estimates suggesting tha
 In this changing landscape, web developers can benefit from understanding the technical differences between HTTP/1.1 and HTTP/2, 
 allowing them to make informed and efficient decisions about evolving best practices.
 
+                                                  DIFFERENT BETWEEN HTTP/1.1 AND HTTP/2
+ 
+1. HTTP/1.1 and HTTP/2 is the binary framing layer, which can be thought of as a part of the application layer in the internet protocol stack. As opposed to HTTP/1.1, which keeps all requests and responses in plain text format, HTTP/2 uses the binary framing layer to encapsulate all messages in binary format, while still maintaining HTTP semantics, such as verbs, methods, and headers
+2. The conversion of messages into binary allows HTTP/2 to try new approaches to data delivery not available in HTTP/1.1
+3. But while HTTP/1.1 transfers these in plain-text messages, HTTP/2 encodes these into binary, allowing for significantly different delivery model possibilities
 
