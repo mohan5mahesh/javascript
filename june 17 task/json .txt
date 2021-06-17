@@ -1,0 +1,27 @@
+
+diplay all the country flags in console: 
+
+
+var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+        xhr.onload = function () {
+          var data = JSON.parse(this.response);
+          for(let i in data)
+          {
+              console.log(i,data[i].flag)
+          }
+        };
+        xhr.send();
+        
+ use the same restcountries and print all countries name, region, sub region and population.
+ 
+ var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+        xhr.onload = function () {
+          var data = JSON.parse(this.response);
+          for(let i in data)
+          {
+              console.log("name:" + data[i].name,"region:" + data[i].region ,"sub region:" + data[i].subregion,"population:" + data[i].population);
+          }
+        };
+        xhr.send();
