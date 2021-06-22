@@ -1,0 +1,210 @@
+
+//Write a function called “addFive”.
+//Given a number, “addFive” returns 5 added to that number.
+var sum = function(a)
+{
+    a = a + 5;
+    return a;
+}
+
+var result1 = sum(5);
+var result2 = sum(0);
+var result3 = sum(-5);
+
+console.log(result1);
+console.log(result2);
+console.log(result3);
+
+//Write a function called “getOpposite”.
+//Given a number, return its opposite
+var GetOpposite = function(a)
+{
+    return -a;
+}
+
+var result1 = GetOpposite(5);
+var result2 = GetOpposite(0);
+var result3 = GetOpposite(-5);
+var result4 = GetOpposite("-5a");
+var result5 = GetOpposite(5.5);
+
+console.log(result1);
+console.log(result2);
+console.log(result3);
+console.log(result4);
+console.log(result5);
+
+//Fill in your code that takes an number minutes and converts it to seconds.
+var ToSec = function(min)
+{
+    return min * 60;
+}
+var res1 = ToSec(5);
+var res2 = ToSec(3);
+var res3 = ToSec(2);
+
+console.log(res1);
+console.log(res2);
+console.log(res3);
+
+//Create a function that takes a string and returns it as an integer.
+var ToInteger = function(mystr)
+{
+    return parseInt(mystr);
+}
+
+console.log(ToInteger("6"));
+console.log(ToInteger("1000"));
+console.log(ToInteger("12"));
+
+//Create a function that takes a number as an argument, increments the number by +1 and returns the result
+var nextInt = function(num)
+{
+    return num+1;
+}
+
+console.log(nextInt(0));
+console.log(nextInt(9));
+console.log(nextInt(-3));
+
+//Create a function that takes an array and returns the first element.
+var arr = function(num)
+{
+    return num[0];
+}
+
+console.log(arr([0,1,2,3]));
+console.log(arr([80,5,100]));
+console.log(arr([-500,0,50]));
+
+//Write a function that converts hours into seconds.
+var hoursToSeconds = function(arr,len){
+    var res = [];
+    for(let i = 0 ; i<len ; i++)
+    {
+        res.push(arr[i]*(60*60));
+    }
+    console.log(res);
+}
+var arr = [2,10,24];
+var len = arr.length;
+hoursToSeconds(arr,len);
+
+//Find the Perimeter of a Rectangle
+//Create a function that takes height and width and finds the perimeter of a rectangle
+
+var findPerimeter =function (num1,num2) {
+    
+    return 2*(num1+num2);
+}
+var peri1 = findPerimeter(6,7);
+var peri2 = findPerimeter(20,10);
+var peri3 = findPerimeter(2,9);
+console.log(peri1);
+console.log(peri2);
+console.log(peri3);
+
+//Less Than 100?
+//iven two numbers, return true if the sum of both numbers is less than 100. Otherwise return false
+var lessthan100 = function(num1,num2)
+{
+    let sum = num1+num2;
+    if(sum<100)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+console.log(lessthan100(22,15));
+console.log(lessthan100(83,34));
+
+//There is a single operator in JavaScript, capable of providing the remainder of a division operation. 
+//Two numbers are passed as parameters. 
+//The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+
+var remainder = function (num1,num2) {
+    
+    if(num1%num2 == 0)
+    {
+        return 0
+    }
+    else
+    {
+        return num1;
+    }
+}
+console.log( remainder(1,3)  );
+console.log( remainder(3,4)  );
+console.log( remainder(-9,45)  );
+console.log( remainder(5,5)  );
+
+//MacDonald is asking you to tell him how many legs can be counted among all his animals. 
+//The farmer breeds three species:
+//turkey = 2 legs
+//horse = 4 legs
+//pigs = 4 legs
+//The farmer has counted his animals and he gives you a subtotal for each species. 
+//You have to implement a function that returns the total number of legs of all the animals.
+
+var CountAnimals = function(tur,horse,pigs) 
+{
+    var t = 2;
+    var h = 4;
+    var p = 4;
+    
+    var sum = (t*tur)+(h*horse)+(p*pigs);
+    
+    return sum ;
+    
+}
+ console.log(CountAnimals(2,3,5));
+  console.log(CountAnimals(1,2,3));
+   console.log(CountAnimals(5,2,8));
+
+//Frames Per Second
+//Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
+
+var frames = function (num1,num2) {
+    return num1*(60*num2);
+}
+console.log(frames(1,1));
+console.log(frames(10,1));
+console.log(frames(10,25));
+
+//Check if an Integer is Divisible By Five
+//Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+
+
+var divisibleByFive =  function (num1) {
+    if(num1%5 === 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+console.log( divisibleByFive(5) );
+console.log( divisibleByFive(-55) );
+console.log( divisibleByFive(37) );
+
+//Given a number, “isEven” returns whether it is even.
+var Iseven =  function (num) {
+    if(num%2 === 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+console.log( Iseven(12) );
+console.log( Iseven(0) );
+console.log( Iseven(11) );
+console.log( Iseven("11h") );
