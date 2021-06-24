@@ -1,5 +1,17 @@
+Sum of all numbers in an array
+var add =  (arr)=>
+{
+  let sum = 0;
+  for (let i = 0 ; i<arr.length ; i++)
+  {
+      sum = sum + arr[i];
+  }
+  console.log(sum);
+}
+var arr = [1,2,3,4,5,6,7,8,9];
+add(arr);
+----------------------------------------------------------
 Convert all the strings to title caps in a string array
-
 var t = (str) =>
     {
      var sentence = str.toLowerCase().split(" ");
@@ -12,9 +24,8 @@ var t = (str) =>
    }
    
    t("hi every one");
-  
+--------------------------------------------------------------  
 Print odd numbers in an array
-
 var odd = (num)=>
 {
   for (let i=1; i<num.length; i++) 
