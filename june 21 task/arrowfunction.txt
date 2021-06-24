@@ -1,0 +1,14 @@
+
+Convert all the strings to title caps in a string array
+var t = (str) =>
+    {
+     var sentence = str.toLowerCase().split(" ");
+      for(var i = 0; i< sentence.length; i++)
+      {
+         sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
+      }
+   console.log(sentence.join(" "));
+   return sentence;
+   }
+   
+   t("hi every one");
