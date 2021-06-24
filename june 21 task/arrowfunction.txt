@@ -1,5 +1,5 @@
-
 Convert all the strings to title caps in a string array
+
 var t = (str) =>
     {
      var sentence = str.toLowerCase().split(" ");
@@ -13,8 +13,9 @@ var t = (str) =>
    
    t("hi every one");
   
- Print odd numbers in an array
- var odd = (num)=>
+Print odd numbers in an array
+
+var odd = (num)=>
 {
   for (let i=1; i<num.length; i++) 
   {
