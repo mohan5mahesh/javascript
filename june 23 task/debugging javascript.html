@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert( "I’m JavaScript!");
+ </script>
+ Whats the error in this ?
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>        //alert("I’m invoked!");
+</body>
+</html>
+
+<!DOCTYPE html>                           //alert("I'm JavaScript!");                     
+<body>                                    //alert('Hello') // this line is not having semicolon
+ <script src=”script.js”></script>        //alert(`World`)
+</body>                                   //alert(3 + 1 + 2); // this is multiple line code and its working
+</html>
+
+
+<!DOCTYPE html>                            //let admin=9, fname=10.5;
+<html>                                     //fname = "Guvi";
+<body>                                     //lname = "geek"
+ <script src=”script.js”></script>         //admin = fname+lname;
+</body>                                    //alert( admin ); // "Guvi geek"
+</html>        
+
+<!DOCTYPE html>                            //let fname=10.5; 
+<html>                                     //fname = "Guvi";
+<body>                                     //lname = "geek"
+ <script src=”script.js”></script>         //let name = fname+lname;
+</body>                                    //alert( 'hello ${name}' ); // its come 'hello ${name}'
+</html>
+
+<!DOCTYPE html>                            //let a = prompt("First number?");  //10
+<html>                                     //let b = prompt("Second number?"); //20
+<body>                                     //alert(a + b);                     //output comes 1020
+ <script src=”script.js”></script>
+</body>
+</html>
+
+<!DOCTYPE html>                            //var a = "2" > "12";
+<html>                                     //var b = parseInt(a)   
+<body>                                     //if (b) 
+ <script src=”script.js”></script>         //{   console.log("Code is Blasted") // wht the code is blasted because the a value is string coude not combare that }
+</body>                                    //else  { console.log("Diffused")        // if we parseint the a to store in b the code is diffused
+</html>                                    //}
