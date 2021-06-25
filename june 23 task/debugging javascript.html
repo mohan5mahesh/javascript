@@ -7,20 +7,20 @@
  Whats the error in this ?
 </body>
 </html>
-
+-------------------------------------------------------------------------------------------------
 <!DOCTYPE html>
 <html>
 <body>
  <script src=”script.js”></script>        //alert("I’m invoked!");
 </body>
 </html>
-
+-----------------------------------------------------
 <!DOCTYPE html>                           //alert("I'm JavaScript!");                     
 <body>                                    //alert('Hello') // this line is not having semicolon
  <script src=”script.js”></script>        //alert(`World`)
 </body>                                   //alert(3 + 1 + 2); // this is multiple line code and its working
 </html>
-
+----------------------------------------------------
 
 <!DOCTYPE html>                            //let admin=9, fname=10.5;
 <html>                                     //fname = "Guvi";
@@ -28,28 +28,28 @@
  <script src=”script.js”></script>         //admin = fname+lname;
 </body>                                    //alert( admin ); // "Guvi geek"
 </html>        
-
+-------------------------------------------------------
 <!DOCTYPE html>                            //let fname=10.5; 
 <html>                                     //fname = "Guvi";
 <body>                                     //lname = "geek"
  <script src=”script.js”></script>         //let name = fname+lname;
 </body>                                    //alert( 'hello ${name}' ); // its come 'hello ${name}'
 </html>
-
+--------------------------------------------------------
 <!DOCTYPE html>                            //let a = prompt("First number?");  //10
 <html>                                     //let b = prompt("Second number?"); //20
 <body>                                     //alert(a + b);                     //output comes 1020
  <script src=”script.js”></script>
 </body>
 </html>
-
+---------------------------------------------------------
 <!DOCTYPE html>                            //var a = "2" > "12";
 <html>                                     //var b = parseInt(a)   
 <body>                                     //if (b) 
  <script src=”script.js”></script>         //{   console.log("Code is Blasted") // wht the code is blasted because the a value is string coude not combare that }
 </body>                                    //else  { console.log("Diffused")        // if we parseint the a to store in b the code is diffused
 </html>                                    //}
-
+--------------------------------------------------------
 <!DOCTYPE html>                            //let b = prompt("Enter a number?"); // to enter any number to take string
 <html>                                     //let a = parseInt(b);               // parse string to integer then to get success
 <body>                                     //if (a) {
@@ -57,5 +57,96 @@
 </body>                                    //}
 </html>                                    //else
                                            // console.log( "Success" );
+
+----------------------------------------------------------
+let value = prompt('How many runs you scored in this ball');
+
+if (value == 4) {
+      console.log("You hit a Four");
+} else if (value == 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+
+--------------------------------------------------------
+let login = 'Employee';
+let message = (login == 'Employee') ? "Welcome": (login == 'Director') ? 'Greetings' : (login == '') ? 'No login' :'';
+console.log(message);
+-------------------------------------------------------------
+
+let message;
+if (null || 2  || undefined)
+{
+  message = "welcome boss";
+}
+else
+{
+  message = "Go away";
+}
+  console.log(message);
+--------------------------------------------------------------
+let message;
+let lock ;
+if (null || lock || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+  console.log(message);
+-------------------------------------------------------------
+  let message;
+  let lock ;
+  //Dont change any code below this
+  if (lock && " " || undefined )
+  {
+    message = "Go away";
+  }
+  else
+  {
+   message = "welcome";
+  }
+  console.log(message);
+-----------------------------------------------------------
+
+i = 3;
+while (i) {
+      console.log( i--);
+}
+-----------------------------------------------------------
+
+
+for(let i = 1 ; i<=10; i++)
+{
+      console.log(i)
+}
+-----------------------------------------------------------
+for (let num = 2; num <= 20; num += 1) 
+{
+      if(num%2 == 0)
+      {
+            console.log(num)
+      }
+}
+-------------------------------------------------------------
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) 
+{
+      console.log(gifts[i]);
+}
+--------------------------------------------------------------
+let countdown ;
+while (countdown > 0) {
+      countdown--;
+      if(countdown == 0)
+      {
+       console.log("bomb triggered");
+      }
+ }
+    console.log("disarm the bomb");
+---------------------------------------------------------------
 
 
