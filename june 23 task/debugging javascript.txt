@@ -1,0 +1,62 @@
+
+aa = (f,s,t) => {
+      
+      console.log(f,s,t);
+      if(f>s &&f>t){
+      console.log(f)}
+      else if(s>f && s>t){
+      console.log(s)}
+      else{
+      console.log(t)}
+     }
+     
+     aa(1,2,3);
+----------------------------------------
+let n = [1,2,3];
+console.log(add(n));
+function add(n)
+{
+let sum = 0;
+for(var i=0;i<n.length;i++){
+ sum+=n[i]
+ }
+ return sum;
+}
+
+----------------------------------------
+(function(arr) 
+{
+ let sum = 0;
+ for (let i = 0; i < arr.length ; i++)
+ {
+      sum += arr[i];
+ }
+ console.log(sum);
+ 
+})([9,8,5,6,4,3,2,1]);
+
+-----------------------------------------
+var arro = ["guvi", "geek", "zen", "fullstack"];
+var ano = function(arro) 
+{
+for (var i = 0; i <= arro.length; i++) 
+{
+console.log(arro[i][0].toUpperCase() + arro[i].substr(1));
+}
+}
+ano(arro);
+
+-----------------------------------------
+const newArray=[1,3,2,5,10];
+const myPrime=newArray.filter(num=>{
+ for(let i=2;i<=num;i++){
+ if(num%i!==0)
+ {
+ return true;
+ }
+ }
+ return num===1;
+});
+console.log(myPrime);
+----------------------------------------------
+
