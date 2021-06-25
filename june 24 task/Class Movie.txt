@@ -13,6 +13,8 @@ class Movie
 
       }
 
-      let a = new Movie("Casino Royale","Eon Productions","pg13")
+      let a = new Movie("Casino Royale","Eon Productions","PG13")
+      let b = new Movie("Casino Royale","Eon Productions","PG")
 
       a.getPG();
+      b.getPG();
