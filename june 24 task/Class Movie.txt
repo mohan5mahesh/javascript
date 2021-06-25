@@ -1,0 +1,18 @@
+class Movie
+      {
+            constructor(title,studio,rating)
+            {
+                  this.Title = title;
+                  this.Studio = studio;
+                  this.Rating = rating; 
+            }
+            getPG()
+            {
+                  console.log(this.Title,this.Studio,this.Rating);
+            }
+
+      }
+
+      let a = new Movie("Casino Royale","Eon Productions","pg13")
+
+      a.getPG();
