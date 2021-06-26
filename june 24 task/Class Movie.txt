@@ -16,5 +16,6 @@ class Movie
       let a = new Movie("Casino Royale","Eon Productions","PG13")
       let b = new Movie("Casino Royale","Eon Productions","PG")
 
-      a.getPG();
-      b.getPG();
+      let c = new Movie(a,b);
+
+      c.getPG([a,b])
