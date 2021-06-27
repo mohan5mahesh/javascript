@@ -22,3 +22,17 @@ var xhr = new XMLHttpRequest();
         };
         xhr.send();
         
+Print the following details name, capital, flag using forEach function
+
+var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+        xhr.onload = function () {
+          var data = JSON.parse(this.response);
+          
+         data.forEach(ele => console.log('name:' + ele.name ,'capital:'+ ele.capital , 'flag:' + ele.flag) )
+          
+        
+        };
+        xhr.send();
+
+        
