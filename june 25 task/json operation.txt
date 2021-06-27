@@ -9,7 +9,7 @@ var xhr = new XMLHttpRequest();
           console.log(a);
         };
         xhr.send();
-        
+-------------------------------------------------------------------------------------        
 Get all the countries with a population of less than 2 lakhs using Filter function
 
 var xhr = new XMLHttpRequest();
@@ -21,7 +21,7 @@ var xhr = new XMLHttpRequest();
           console.log(a);
         };
         xhr.send();
-        
+-------------------------------------------------------------------------------------        
 Print the following details name, capital, flag using forEach function
 
 var xhr = new XMLHttpRequest();
@@ -30,6 +30,21 @@ var xhr = new XMLHttpRequest();
           var data = JSON.parse(this.response);
           
          data.forEach(ele => console.log('name:' + ele.name ,'capital:'+ ele.capital , 'flag:' + ele.flag) )
+          
+        
+        };
+        xhr.send();
+----------------------------------------------------------------------------------
+Print the total population of countries using reduce function
+
+var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+        xhr.onload = function () {
+          var data = JSON.parse(this.response);
+          var m = data.map(el=> el.population);
+          console.log(m);
+         var a = m.reduce((x,y) => x+y)
+         console.log(a);
           
         
         };
