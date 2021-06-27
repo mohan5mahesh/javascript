@@ -1,0 +1,12 @@
+Get all the countries from Asia continent /region using Filter function
+
+var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+        xhr.onload = function () {
+          var data = JSON.parse(this.response);
+          
+          var a = data.filter(el => el.region === "Asia");
+          console.log(a);
+        };
+        xhr.send();
+        
